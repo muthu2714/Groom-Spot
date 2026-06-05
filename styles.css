@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.8);
+    padding: 20px 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: gold;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn {
+    border: 1px solid gold;
+    padding: 8px 15px;
+    color: gold;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f") center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero span {
+    color: gold;
+}
+
+.sub {
+    color: gold;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+/* BUTTON */
+.btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTIONS */
+.section {
+    padding: 100px 0;
+}
+
+.dark {
+    background: #111;
+}
+
+/* GRID */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* CARD */
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* SERVICES */
+.service {
+    background: #1a1a1a;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* FORM */
+.form-box {
+    max-width: 600px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+input, select {
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #444;
+    color: white;
+}
+
+button {
+    padding: 12px;
+    background: gold;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: gray;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
