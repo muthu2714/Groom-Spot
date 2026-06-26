@@ -18,13 +18,13 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-
+<div id="toast-container"></div>
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="container nav-content">
-        <a href="#" class="logo">AURUM</a>
+    <div id="mobile-menu" class="container nav-content hidden">
+        <a href="#" class="logo">Groom Spot</a>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -39,7 +39,7 @@
 <header id="home" class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-        <p class="sub">Crafting Excellence Since 2012</p>
+        <p class="sub">Crafting Excellence Since 2004</p>
         <h1>Mastering The Art <br><span>Of Hair</span></h1>
         <a href="#appointment" class="btn-primary">Schedule Appointment</a>
     </div>
@@ -102,14 +102,14 @@
         <h2>Book Appointment</h2>
 
         <form id="booking-form">
-            <input type="text" placeholder="Full Name">
-            <input type="tel" placeholder="Phone Number">
-            <select>
+            <input id="form-name" type="text" placeholder="Full Name" required>
+            <input id="form-phone" type="tel" placeholder="Phone Number" required>
+            <select id="form-service">
                 <option>Select Service</option>
                 <option>Couture Cutting</option>
                 <option>Balayage</option>
             </select>
-            <input type="date">
+            <input id="form-date" type="date">
 
             <button type="submit">Book via WhatsApp</button>
         </form>
